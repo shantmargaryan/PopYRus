@@ -87,3 +87,42 @@
   height: 100vh;
   overscroll-behavior: none;
 }
+
+
+/* UNIVERSAL SECTION HERO START  */
+
+.universal-hero {
+  padding-block-end: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.universal-hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.universal-hero__title {
+  margin-block-end: 20px;
+}
+
+.universal-hero__text {
+  max-width: 50.25rem;
+  text-align: center;
+}
+
+/* UNIVERSAL SECTION HERO END */

@@ -1,0 +1,151 @@
+.history {
+  padding-block: 10%;
+  background-color: var(--bg-color);
+}
+
+.history__container {}
+
+.history__list {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    width: .0625rem;
+    background-color: #CECECE;
+  }
+}
+
+.history__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  &:not(:last-child) {
+    margin-block-end: 3.125rem;
+  }
+
+  &:hover .history__date {
+    transform: translateX(15px);
+  }
+}
+
+.history__circle {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--title-color);
+}
+
+.history__date {
+  position: static;
+  width: 8rem;
+  margin-block-end: .625rem;
+  transition: transform 0.6s ease 0s;
+}
+
+.history__year {
+  display: block;
+  margin-block-end: .625rem;
+  color: var(--title-color);
+  font: 300 1.7rem/ 100% 'Chivo', sans-serif;
+}
+
+.history__text {}
+
+.history__content {
+  position: relative;
+  padding: min(2.5rem, 5vw);
+  background-color: #FFF;
+  box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.5);
+}
+
+.history__title {
+  margin-block-end: .625rem;
+  font: 300 1.7rem/ 100% 'Chivo', sans-serif;
+}
+
+@media(min-width:992px) {
+  .history__content {
+    flex-basis: 40%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: -13px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #fff;
+      border-right: 0 solid #fff;
+      border-bottom: 14px solid transparent;
+    }
+  }
+
+  .history__date {
+    position: absolute;
+    top: 3.125rem;
+    left: 50%;
+    width: 15rem;
+    margin: -25px 0 0 25px;
+  }
+
+  .history__item {
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    &:nth-child(1n) .history__content {
+      margin-inline-end: 37.25rem;
+    }
+
+    &:nth-child(2n) .history__content {
+      margin-inline-start: 37.25rem;
+      margin-inline-end: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: -14px;
+        right: auto;
+        display: inline-block;
+        border-top: 14px solid transparent;
+        border-right: 14px solid #fff;
+        border-left: 0 solid #fff;
+        border-bottom: 14px solid transparent;
+      }
+    }
+
+    &:nth-child(2n) .history__date {
+      left: 30%;
+      margin: -25px 25px 0 0;
+      text-align: right;
+    }
+
+    &:nth-child(2n):hover .history__date {
+      transform: translateX(-15px);
+    }
+  }
+}

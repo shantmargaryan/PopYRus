@@ -149,8 +149,8 @@ if (document.querySelector('.hero__swiper')) {
 
 if (document.querySelector('.welcome__swiper')) {
     const swiper = new Swiper(".welcome__swiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 10,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -158,12 +158,7 @@ if (document.querySelector('.welcome__swiper')) {
         autoplay: {
             delay: 1500,
         },
-
         breakpoints: {
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-            },
             // when window width is >= 640px
             640: {
                 slidesPerView: 3,
