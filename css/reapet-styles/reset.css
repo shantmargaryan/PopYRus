@@ -1,0 +1,67 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.page,
+.page__body {
+    width: 100%;
+    height: 100%;
+}
+
+.page__body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Chivo', sans-serif;
+    background-color: #fff;
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--link-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

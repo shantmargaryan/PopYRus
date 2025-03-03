@@ -1,0 +1,68 @@
+<svg width="0" height="0" class="hidden">
+  <symbol id="Address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path
+      d="M11.8 20.025q-.825 0-1.412-.6T9.8 18t.588-1.412T11.8 16l.6-.575q.2-.2.463-.312T13.4 15q.575 0 .988.425t.412 1v.425q0 .5.325.825t.825.325q.375 0 .675-.225t.425-.575l.3-.825q.225-.6.725-.987t1.15-.388q.275-.7.438-1.45t.162-1.55q0-2.225-1.112-4.062T15.8 5.05V6q0 .825-.587 1.413T13.8 8h-1v2q0 .425-.288.713T11.8 11h-1v1.7q0 .55-.375.925T9.5 14q-.35 0-.638-.15t-.462-.425L6.8 11h-1v1q0 .775-.525 1.325t-1.25.65q.65 2.6 2.813 4.325t4.962 1.725m2-6.025q-.425 0-.712-.287T12.8 13t.288-.712T13.8 12h1q.425 0 .713.288T15.8 13t-.288.713T14.8 14zm2.325-3q-.5 0-.788-.387T15.2 9.75l.375-1.1q.1-.3.35-.475t.55-.175q.5 0 .788.388t.137.862l-.375 1.1q-.1.3-.35.475t-.55.175M11.8 22q-2.075 0-3.9-.788t-3.175-2.137T2.588 15.9T1.8 12t.788-3.9t2.137-3.175T7.9 2.788T11.8 2t3.9.788t3.175 2.137T21.013 8.1T21.8 12t-.788 3.9t-2.137 3.175t-3.175 2.138t-3.9.787" />
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Calendar">
+    <path
+      d="M11 14v-2h2v2zm-4 0v-2h2v2zm8 0v-2h2v2zm-4 4v-2h2v2zm-4 0v-2h2v2zm8 0v-2h2v2zM3 22V4h3V2h2v2h8V2h2v2h3v18zm2-2h14V10H5zM5 8h14V6H5zm0 0V6z">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" id="Armenia">
+    <path fill="#f1b31c" d="M5 17h62v38H5z"></path>
+    <path fill="#1e50a0" d="M5 30h62v12H5z"></path>
+    <path fill="#d22f27" d="M5 17h62v13H5z"></path>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" id="English">
+    <path fill="#fff" d="M5 17h62v38H5z"></path>
+    <path fill="#d22f27" d="M5 17h62v5H5zm0 9h62v4H5zm0 8h62v4H5z"></path>
+    <path fill="#1e50a0" d="M5 17h32v21H5z"></path>
+    <path fill="#d22f27" d="M5 42h62v4H5z"></path>
+    <circle cx="9" cy="22" r="1.75" fill="#fff"></circle>
+    <circle cx="17" cy="22" r="1.75" fill="#fff"></circle>
+    <circle cx="25" cy="22" r="1.75" fill="#fff"></circle>
+    <circle cx="33" cy="22" r="1.75" fill="#fff"></circle>
+    <circle cx="29" cy="26" r="1.75" fill="#fff"></circle>
+    <circle cx="21" cy="26" r="1.75" fill="#fff"></circle>
+    <circle cx="13" cy="26" r="1.75" fill="#fff"></circle>
+    <circle cx="9" cy="30" r="1.75" fill="#fff"></circle>
+    <circle cx="17" cy="30" r="1.75" fill="#fff"></circle>
+    <circle cx="25" cy="30" r="1.75" fill="#fff"></circle>
+    <circle cx="33" cy="30" r="1.75" fill="#fff"></circle>
+    <circle cx="29" cy="34" r="1.75" fill="#fff"></circle>
+    <circle cx="21" cy="34" r="1.75" fill="#fff"></circle>
+    <circle cx="13" cy="34" r="1.75" fill="#fff"></circle>
+    <path fill="#d22f27" d="M5 50h62v5H5z"></path>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Facebook">
+    <path
+      d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Instagram">
+    <path
+      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Phone">
+    <path
+      d="M20.487 17.14l-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66c-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" id="Russia">
+    <path fill="#d22f27" d="M5 17h62v38H5z"></path>
+    <path fill="#fff" d="M5 17h62v13H5z"></path>
+    <path fill="#1e50a0" d="M5 30h62v12H5z"></path>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z">
+    </path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Twitter">
+    <path
+      d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23">
+    </path>
+  </symbol>
+</svg>

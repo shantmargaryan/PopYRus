@@ -1,0 +1,258 @@
+.header {
+    padding-block-end: 3.125rem;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.header__container {
+    position: relative;
+}
+
+.header__content {
+    background-color: rgba(123, 123, 123, 0.1);
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header__content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    max-width: 85.125rem;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+
+.header__strong {
+    margin-inline-end: auto;
+    font: 700 1rem / 130% 'Chivo', sans-serif;
+    color: var(--subtitle-color);
+}
+
+.header__socials {
+    display: none;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header__social-link {
+    display: flex;
+    justify-content: end;
+    width: 3rem;
+    padding-block: 10px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.header__social-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #b7b7b7;
+}
+
+.header__form-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__form {
+    display: none;
+}
+
+.header__input {
+    padding: 1rem;
+    font: 400 1rem / 130% 'Chivo', sans-serif;
+    border-left: 1px solid #dbdbdb;
+    color: var(--text-color);
+}
+
+.header__btn {
+    padding: 5px 15px;
+    font: 400 1rem / 130% 'Chivo', sans-serif;
+    background-color: #fff;
+    color: var(--text-color);
+    border-inline: 1px solid #dbdbdb;
+}
+
+
+.header__phone-number {
+    display: block;
+    font: 400 1.2rem/ 150% 'Chivo', sans-serif;
+    color: var(--text-color);
+    text-wrap: nowrap;
+}
+
+.header__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block-start: 10px;
+
+    @media(min-width:1200px) {
+        justify-content: start;
+    }
+}
+
+.header__logo {
+    position: relative;
+    z-index: 11;
+    max-width: 8.25rem;
+}
+
+.header__img {}
+
+.header__contact-list {
+    position: absolute;
+    top: 80px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+
+    @media(min-width:1200px) {
+        display: flex;
+    }
+}
+
+.header__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-inline-end: 70px;
+}
+
+.header__contact-icon {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--title-color);
+}
+
+.header__contact-box {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 10px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.header__contact-link {
+    font: 400 1.3rem/ 150% 'Chivo', sans-serif;
+    color: var(--text-color);
+}
+
+.header__contact-text {
+    margin-block-start: 10px;
+    font: 400 1.1rem/ 150% 'Chivo', sans-serif;
+    color: var(--text-color);
+}
+
+.header__contact-open-time {
+    font: 400 1.3rem/ 150% 'Chivo', sans-serif;
+    color: var(--text-color);
+}
+
+.header__contact-address {
+    font: 400 1.3rem/ 150% 'Chivo', sans-serif;
+    color: var(--text-color);
+}
+
+
+
+/* SELECT START */
+
+.select {
+    max-width: 15.625rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.select-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-block-start: 5px;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    border-top: 1px solid #c5c5c5;
+    background-color: #fff;
+}
+
+.select-btn-active {
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.select-btn:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: transform .3s ease 0s;
+}
+
+.select-list {
+    position: absolute;
+    top: 100%;
+    z-index: 11;
+    right: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select-list-show {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.select-option {
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.select-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.select-option-selected {
+    background-color: #ccc;
+}
+
+.select-option:hover {
+    background-color: #ccc;
+}
+
+/* SELECT END */
+
+
+@media(min-width:48rem) {
+    .header__content-wrapper {
+        justify-content: end;
+    }
+
+    .header__form {
+        display: flex;
+    }
+
+
+    .header__socials {
+        display: flex;
+    }
+
+    .header__phone-number {
+        display: none;
+    }
+}

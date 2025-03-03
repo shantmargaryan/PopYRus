@@ -1,0 +1,89 @@
+.section {
+  margin-block-end: 10%;
+}
+
+.container {
+  max-width: 85.125rem;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.title {
+  font: 700 clamp(2.1rem, 5vw, 3rem) / 100% 'Chivo', sans-serif;
+  color: var(--title-color);
+}
+
+.secundary-title {
+  margin-block-end: 3.375rem;
+  font: 700 clamp(1.7rem, 5vw, 2.5rem)/ 100% 'Chivo', sans-serif;
+  color: var(--title-color);
+}
+
+.text {
+  font: 400 1rem/ 150% 'Chivo', sans-serif;
+  color: var(--text-color);
+}
+
+.link {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font: 300 1.125rem/ 150% 'Chivo', sans-serif;
+  color: #fff;
+  background-color: #fff;
+  transition: background-color 0.3s ease 0s,
+    color 0.3s ease 0s;
+  border: 1px solid var(--link-background);
+
+  &:hover {
+    color: var(--link-background);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--link-background);
+    transition: height 0.3s ease 0s;
+  }
+
+  &:hover::before {
+    height: 0%;
+  }
+}
+
+.icons {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+  }
+}
+
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}

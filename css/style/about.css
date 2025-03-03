@@ -1,0 +1,158 @@
+/* UNIVERSAL SECTION HERO START  */
+
+.universal-hero {
+  padding-block-end: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.universal-hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.universal-hero__title {
+  margin-block-end: 20px;
+}
+
+.universal-hero__text {
+  max-width: 50.25rem;
+  text-align: center;
+}
+
+/* UNIVERSAL SECTION HERO END */
+
+
+
+
+/* EXPERIENCE SECTION START */
+
+.experience {}
+
+
+.experience__container {}
+
+
+.experience__content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--container-grid);
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  &:not(:last-child) {
+    margin-block-end: 3.125rem;
+  }
+
+  &:nth-child(2) .experience__text {
+    margin-block-end: 1.25rem;
+  }
+}
+
+.experience__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: min(1.75rem, 2.5vw);
+  background-color: var(--bg-color);
+}
+
+.experience__title {
+  margin-block-end: 1rem;
+}
+
+
+.experience__text {}
+
+.experience__img {
+  width: 100%;
+}
+
+/* EXPERIENCE SECTION END */
+
+/* WELECOME SECTION START */
+
+.welcome {}
+
+.welcome__container {}
+
+.welcome__wrapper {
+  display: grid;
+  grid-template-columns: var(--container-grid);
+  align-items: center;
+  gap: 1.875rem;
+  margin-block-end: 4.375rem;
+  opacity: 0;
+  transform: translateY(40px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.welcome__title {
+  margin-block-end: 1rem;
+}
+
+
+.welcome__text {
+  margin-block-end: 1.25rem;
+}
+
+.welcome__img {
+  border-radius: 50%;
+}
+
+.welcome__swiper {
+  opacity: 0;
+  transform: translateY(40px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.welcome__slider-img {
+  width: 12.5rem;
+  height: 1.5rem;
+}
+
+/* WELECOME SECTION END */

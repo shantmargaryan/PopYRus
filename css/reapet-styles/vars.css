@@ -1,0 +1,9 @@
+:root {
+    --title-color: #30a9d8;
+    --text-color: #637280;
+    --link-background: #0f2c92;
+    --subtitle-color: #ee0085;
+    --bg-color: #F7F7F7;
+    --container-grid: repeat(auto-fit, minmax(min(31.25rem, 100%), 1fr));
+    --universal-grid: repeat(auto-fit, minmax(min(20.25rem, 100%), 1fr))
+}
