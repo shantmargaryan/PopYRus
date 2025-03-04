@@ -18,7 +18,7 @@
 .burger__line {
     height: var(--height-line);
     width: 100%;
-    background-color: var(--title-color);
+    background-color: var(--subtitle-color);
     transition: transform 0.3s ease 0s;
 }
 

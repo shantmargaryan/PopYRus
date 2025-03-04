@@ -25,16 +25,16 @@
 
 .nav__link {
     font: 400 1.5rem/ 150% 'Chivo', sans-serif;
-    color: var(--text-color);
+    color: var(--link-background);
     transition: color 0.3s ease 0s;
 
     &:hover {
-        color: var(--title-color);
+        color: var(--title-color);  
     }
 }
 
 .nav__link_active {
-    color: var(--title-color);
+    color: var(--subtitle-color);
 }
 
 
