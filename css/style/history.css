@@ -73,7 +73,9 @@
   font: 300 1.7rem/ 100% 'Chivo', sans-serif;
 }
 
-.history__text {}
+.history__text {
+  margin-block-end: .625rem;
+}
 
 .history__content {
   position: relative;
@@ -121,8 +123,8 @@
     }
 
     &:nth-child(2n) .history__content {
-      margin-inline-start: 37.25rem;
       margin-inline-end: 0;
+      margin-inline-start: 37.25rem;
 
       &::after {
         content: "";
