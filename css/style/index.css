@@ -258,11 +258,14 @@
     width: 100%;
     height: 100%;
     clip-path: circle(10% at 0% 0%);
-    transition: clip-path .4s ease-in;
+    -moz-clip-path: circle(10% at 0% 0%);
+    transition: clip-path 0.4s ease-in;
+    -moz-transition: -moz-clip-path 0.4s ease-in;
   }
 
   &:hover::before {
     clip-path: circle(100%);
+    -moz-clip-path: circle(100%);
   }
 
   &:hover .categories__small-title,
@@ -277,6 +280,15 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+}
+
+.categories__img {
+  width: 4.125rem;
+  height: 4.125rem;
+  padding: .625rem;
+  margin-inline-end: .625rem;
+  background-color: #fff;
+  transform: translateY(-3.4rem);
 }
 
 .categories__small-title {
