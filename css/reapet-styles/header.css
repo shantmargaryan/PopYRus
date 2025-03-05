@@ -108,6 +108,7 @@
 .header__contact-list {
     position: absolute;
     top: 80px;
+    z-index: 1;
     display: none;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -115,7 +116,7 @@
     border: 1px solid #dbdbdb;
     background-color: #fff;
 
-    @media(min-width:1200px) {
+    @media(min-width:75rem) {
         display: flex;
     }
 }
