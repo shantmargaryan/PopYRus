@@ -36,7 +36,7 @@
   }
 
   &:hover .team__img {
-    transform: translateY(6rem);
+    transform: translateY(3rem);
   }
 
   &:hover .team__content {

@@ -9,7 +9,7 @@
 }
 
 .title {
-  font: 700 clamp(2.1rem, 5vw, 3rem) / 100% 'Chivo', sans-serif;
+  font: 700 clamp(3.1rem, 5vw, 4rem) / 100% 'Chivo', sans-serif;
   color: var(--title-color);
 }
 
@@ -92,8 +92,9 @@
 /* UNIVERSAL SECTION HERO START  */
 
 .universal-hero {
+  min-height: 100vh;
   padding-block-end: 10%;
-  background-position: center;
+  background-position: center 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -118,11 +119,7 @@
 
 .universal-hero__title {
   margin-block-end: 20px;
-}
-
-.universal-hero__text {
-  max-width: 50.25rem;
-  text-align: center;
+  color: var(--subtitle-color);
 }
 
 /* UNIVERSAL SECTION HERO END */
