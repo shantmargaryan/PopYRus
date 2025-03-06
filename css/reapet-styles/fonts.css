@@ -1,11 +1,8 @@
 @font-face {
     font-family: 'Chivo';
-    src: url(../../fonts/Chivo-Bold.woff),
-        url(../../fonts/Chivo-Bold.woff2),
-        url(../../fonts/Chivo-Bold.ttf),
-        url(../../fonts/Chivo-Bold.eot),
-        url(../../fonts/Chivo-Bold.otf);
-    font-weight: 700;
+    src: url(../../fonts/Chivo-Light.woff),
+        url(../../fonts/Chivo-Light.woff2);
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
