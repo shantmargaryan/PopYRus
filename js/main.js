@@ -27,6 +27,17 @@ const languagesLink = document.querySelectorAll(".header__select-link");
 const animationItem = document.querySelectorAll(".animation-item");
 const imglazy = document.querySelectorAll(".img");
 const hero = document.querySelector(".hero, .universal-hero");
+const topUp = document.querySelector(".footer__top-up");
+
+
+window.addEventListener('scroll', function () {
+    if (document.body.scrollTop > 200
+        || document.documentElement.scrollTop > 200) {
+        topUp.style.opacity = '1';
+    } else {
+        topUp.style.opacity = '0';
+    }
+});
 
 hero.style.paddingTop = `${header.offsetHeight}px`;
 
