@@ -336,23 +336,20 @@ if (document.querySelector("[data-fancybox='gallery']")) {
     });
 }
 
+
+
 if (document.querySelector(".photos__list")) {
-    let loadMoreBtn = document.querySelector('.photos__load-more');
-    let currentItem = 4;
+    const loadMoreButton = document.querySelector(".photos__load-more");
+    const hiddenPhotos = document.querySelectorAll(".photos__item:nth-child(n+5)"); // Скрытые элементы
 
-    loadMoreBtn?.addEventListener('click', showMoreItems);
-
-    function showMoreItems() {
-        let boxes = [...document.querySelectorAll('.photos__item')];
-
-        for (var i = currentItem; i < currentItem + 4; i++) {
-            boxes[i].style.display = 'block';
-        }
-
-        currentItem += 4;
-
-        if (currentItem >= boxes.length) {
-            loadMoreBtn.style.display = "none"
-        }
+    if (loadMoreButton && hiddenPhotos.length > 0) {
+        loadMoreButton.addEventListener("click", function () {
+            hiddenPhotos.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add("show");
+                }, index * 200);
+            });
+            loadMoreButton.style.display = "none";
+        });
     }
 }

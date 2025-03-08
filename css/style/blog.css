@@ -235,4 +235,9 @@
   margin-block-end: 1rem;
   color: var(--text-color);
   font: 700 1rem / 100% 'Chivo', sans-serif;
+  transition: color 0.4s ease 0s;
+
+  &:hover {
+    color: var(--subtitle-color);
+  }
 }
