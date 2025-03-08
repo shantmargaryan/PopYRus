@@ -1,0 +1,19 @@
+.not-found {}
+
+.not-found__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.not-found__title {
+  margin-block-end: 1.875rem;
+  font-size: clamp(3rem, 10vw, 10rem);
+}
+
+.not-found__text {
+  margin-block-end: 1.875rem;
+}
