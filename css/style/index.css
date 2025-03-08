@@ -1,6 +1,18 @@
 /* HERO SECTION STRT */
 
-.hero {}
+.hero {
+  position: relative;
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
 
 .hero__container {}
@@ -14,7 +26,11 @@
 }
 
 .hero__content {
-  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
   opacity: 0;
   transform: translateY(10px);
   visibility: hidden;
@@ -30,13 +46,15 @@
 }
 
 
-.hero__text {}
+.hero__text {
+}
 
 .hero__title {
   margin-block-end: 1.375rem;
 }
 
 .hero__large-text {
+  max-width: 50.25rem;
   margin-block-end: 2.0625rem;
 }
 
@@ -77,10 +95,6 @@
   }
 
   .hero__swiper .swiper-button-prev {}
-
-  .hero__content {
-    padding-inline-start: min(3.75rem, 10%);
-  }
 
   .hero__swiper .swiper-pagination {
     display: none;
