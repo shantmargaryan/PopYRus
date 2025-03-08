@@ -329,3 +329,30 @@ if (document.querySelector("[data-select='select']")) {
 }
 
 // SELECT END
+
+
+if (document.querySelector("[data-fancybox='gallery']")) {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+    });
+}
+
+if (document.querySelector(".photos__list")) {
+    let loadMoreBtn = document.querySelector('.photos__load-more');
+    let currentItem = 4;
+
+    loadMoreBtn?.addEventListener('click', showMoreItems);
+
+    function showMoreItems() {
+        let boxes = [...document.querySelectorAll('.photos__item')];
+
+        for (var i = currentItem; i < currentItem + 4; i++) {
+            boxes[i].style.display = 'block';
+        }
+
+        currentItem += 4;
+
+        if (currentItem >= boxes.length) {
+            loadMoreBtn.style.display = "none"
+        }
+    }
+}

@@ -12,7 +12,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Pap Y Rus</title>
   <link rel="stylesheet" href="./css/reapet-styles/style.css">
-  <link rel="stylesheet" href="./css/style/404.css">
+  <link rel="stylesheet" href="./css/style/photos.css">
+  <link rel="stylesheet" href="./css/lib/lightBox.css">
 </head>
 
 <body class="page__body">
@@ -101,7 +102,6 @@
                 About Us
               </a>
             </li>
-           
             <li class="nav__item">
               <a class="nav__link" href="./history.html">
                 History
@@ -122,7 +122,7 @@
                 Photos
               </a>
             </li>
-            
+
             <li class="nav__item">
               <a class="nav__link" href="./careers.html">
                 Careers
@@ -185,26 +185,82 @@
     </div>
   </header>
   <!-- HEADER END -->
+
+  <!-- MAIN START -->
   <main class="main">
     <div class="main__overlay"></div>
-    <!-- 404 START -->
-    <section class="not-found hero">
-      <div class="not-found__container container">
-        <a class="not-found__logo" href="./index.html">
-        <img class="not-found__img img" data-src="./images/Logo.png" alt="">
-        </a>
-        <h1 class="not-found__title title">
-          404
+    <!-- UNIVERSAL HERO START -->
+    <section class="universal-hero section" style="background-image: url(./images/AboutBg.jpeg);">
+      <div class="universal-hero__container container animation-item">
+        <h1 class="universal-hero__title title">
+          Album
         </h1>
-        <p class="not-found__text">
-          Oops! The page you're looking for doesn't exist.
-        </p>
-        <a class="not-found__link link" href="./index.html">
-          Back to Home
-        </a>
       </div>
     </section>
-    <!-- 404 END -->
+    <!-- UNIVERSAL HERO END -->
+
+    <!-- PHOTOS START -->
+    <section class="photos">
+      <div class="photos__container container">
+        <h2 class="photos__title secundary-title">
+          Photos
+        </h2>
+        <ul class="photos__list">
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product1.jpeg"
+              data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+              <img class="photos__img img" data-src="./images/product1.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product2.jpeg">
+              <img class="photos__img img" data-src="./images/product2.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product3.jpeg">
+              <img class="photos__img img" data-src="./images/product3.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product3.jpeg">
+              <img class="photos__img img" data-src="./images/product3.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product1.jpeg"
+              data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code">
+              <img class="photos__img img" data-src="./images/product1.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product2.jpeg">
+              <img class="photos__img img" data-src="./images/product2.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product3.jpeg">
+              <img class="photos__img img" data-src="./images/product3.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+
+          <li class="photos__item">
+            <a class="photos__link" data-fancybox="gallery" href="./images/product3.jpeg">
+              <img class="photos__img img" data-src="./images/product3.jpeg" width="200" height="150" alt="" />
+            </a>
+          </li>
+        </ul>
+        <button class="photos__load-more link">
+          Load More
+        </button>
+      </div>
+    </section>
+    <!-- PHOTOS END -->
   </main>
   <!-- MAIN END -->
 
@@ -334,6 +390,8 @@
     </div>
   </footer>
   <!-- FOOTER END -->
+
+  <script src="./js/lightBox.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
