@@ -9,7 +9,7 @@
 }
 
 .title {
-  font: 700 clamp(3.1rem, 5vw, 4rem) / 100% 'Chivo', sans-serif;
+  font: 700 clamp(2rem, 5vw, 4rem) / 100% 'Chivo', sans-serif;
   color: var(--title-color);
 }
 
