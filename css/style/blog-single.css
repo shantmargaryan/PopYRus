@@ -1,0 +1,142 @@
+.blog-single {}
+
+.blog-single__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+
+  @media(min-width:992px) {
+    flex-direction: row;
+  }
+}
+
+.blog-single__wrapper {
+  flex-basis: 85%;
+  opacity: 0;
+  transform: translateX(-10px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.blog-single__title {}
+
+.blog-single__content {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  margin-block-end: 1.875rem;
+}
+
+.blog-single__img {
+  margin-block-end: 1.875rem;
+}
+
+.blog-single__date {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.blog-single__date-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--title-color);
+}
+
+.blog-single__admin {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.blog-single__admin-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--title-color);
+}
+
+.blog-single__aside {
+  flex-basis: 30%;
+}
+
+.blog-single__aside-item {
+  opacity: 0;
+  transform: translateX(-10px);
+  visibility: hidden;
+  transition: opacity 0.9s ease 0.2s,
+    transform 0.9s ease 0.2s,
+    visibility 0.9s ease 0.2s;
+
+  &.scroll-active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+
+.blog-single__aside-list {}
+
+
+.blog-single__aside-item {
+
+
+  &:not(:last-child) {
+    margin-block-end: 1.875rem;
+  }
+}
+
+.blog-single__aside-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1.875rem;
+}
+
+.blog-single__aside-date {
+  display: flex;
+  flex-direction: column;
+  padding: .9375rem 1.25rem;
+  background-color: var(--subtitle-color);
+  text-align: center;
+  color: #fff;
+  font: 700 1.3rem / 130% 'Chivo', sans-serif;
+}
+
+.blog-single__aside-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.blog-single__aside-admin {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-block-start: .625rem;
+}
+
+.blog-single__aside-admin-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--title-color);
+}
+
+.blog-single__aside-img {
+  margin-block-end: 1rem;
+}
+
+.blog-single__aside-text {
+  margin-block-end: 1rem;
+}
+
+.blog-single__aside-link {
+  padding: .400rem;
+}

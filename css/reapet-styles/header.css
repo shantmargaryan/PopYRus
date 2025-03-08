@@ -133,8 +133,6 @@
     width: 2.5rem;
     height: 2.5rem;
     fill: var(--title-color);
-    stroke-width: 1px;
-    stroke-dashoffset: 0;
 }
 
 .header__contact-box {

@@ -46,8 +46,7 @@
 }
 
 
-.hero__text {
-}
+.hero__text {}
 
 .hero__title {
   margin-block-end: 1.375rem;
@@ -211,8 +210,7 @@
   }
 }
 
-.services__img {
-}
+.services__img {}
 
 .services__content {}
 
@@ -401,6 +399,13 @@
   font-size: 1.375rem;
 }
 
-.blog__text {}
+.blog__text {
+  margin-block-end: 0.625rem;
+}
+
+.blog__read-more-link {
+  padding: .3125rem;
+  font-size: 1rem;
+}
 
 /* BLOG SECTION END */
