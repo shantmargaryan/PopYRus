@@ -31,11 +31,10 @@ const topUp = document.querySelector(".footer__top-up");
 
 
 window.addEventListener('scroll', function () {
-    if (document.body.scrollTop > 200
-        || document.documentElement.scrollTop > 200) {
-        topUp.style.opacity = '1';
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        topUp.classList.add('footer__top-up_active');
     } else {
-        topUp.style.opacity = '0';
+        topUp.classList.remove('footer__top-up_active');
     }
 });
 

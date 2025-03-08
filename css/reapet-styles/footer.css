@@ -111,6 +111,7 @@
   height: 2.5rem;
   border-radius: 50%;
   border: .150rem solid var(--title-color);
+  opacity: 0;
   transition: background-color 0.4s ease 0s,
     border 0.4s ease 0s,
     opacity 0.4s ease 0s;
@@ -139,4 +140,8 @@
     border-left: 0.125rem solid var(--text-color);
     transition: border 0.4s ease 0s;
   }
+}
+
+.footer__top-up_active {
+  opacity: 1;
 }
