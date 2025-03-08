@@ -38,6 +38,11 @@
 .blog__title {
   margin: 0;
   margin-block-end: .5rem;
+  transition: color 0.4s ease 0s;
+
+  &:hover {
+    color: var(--subtitle-color);
+  }
 }
 
 .blog__info {
