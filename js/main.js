@@ -4,7 +4,7 @@ if (HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules")
     const specRules = {
         prerender: [
             {
-                "urls": ["./index.html", "./about.html", "./history.html", "./team.html", "./contact.html", "./photo.html", "./careers.html", "./blog.html"],
+                "urls": ["./index.html", "./about.html", "./history.html", "./team.html", "./contact.html", "./photos.html", "./careers.html", "./blog.html"],
                 "eagerness": "immediate"
             }
         ],
