@@ -89,7 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
     padding-block-start: 10px;
 
     @media(min-width:75rem) {
@@ -100,10 +100,12 @@
 .header__logo {
     position: relative;
     z-index: 11;
-    max-width: 8.25rem;
 }
 
-.header__img {}
+.header__img {
+    max-width: clamp(5rem, 15vw, 10rem);
+    height: auto;
+}
 
 .header__contact-list {
     position: absolute;
