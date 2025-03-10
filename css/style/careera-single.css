@@ -75,9 +75,14 @@
 
 .aside {
   flex-basis: 35%;
+  height: fit-content;
+  padding: 1.5rem;
+  background-color: #f8f4f4;
+  border: 1px solid #e4e4e4;
 }
 
 .aside__title {
+  font-size: 1.5rem;
 }
 
 .aside__icon {
