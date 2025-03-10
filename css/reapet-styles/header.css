@@ -109,7 +109,7 @@
 
 .header__contact-list {
     position: absolute;
-    top: 80px;
+    top: 6.25rem;
     z-index: 1;
     display: none;
     flex-wrap: wrap;
