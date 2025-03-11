@@ -29,7 +29,7 @@
     transition: color 0.3s ease 0s;
 
     &:hover {
-        color: var(--title-color);  
+        color: var(--title-color); 
     }
 }
 
@@ -47,7 +47,7 @@
 
     .nav__list {
         flex-direction: row;
-        width: 700px;
+        width: 50rem;
     }
 
     .nav__link {
