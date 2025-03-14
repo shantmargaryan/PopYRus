@@ -88,7 +88,6 @@
 
 .pagination__prev {
 
-
   &::before {
     content: '';
     width: 0.625rem;
@@ -146,7 +145,9 @@
 
 /* PAGINATION */
 
-.aside {}
+.aside {
+  flex-basis: 35%;
+}
 
 .aside__form {
   display: flex;
@@ -208,8 +209,8 @@
 
 .aside__item-img {
   flex-shrink: 0;
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 6.5rem;
 }
 
 .aside__date-box {

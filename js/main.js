@@ -151,9 +151,9 @@ if (document.querySelector('.hero__swiper')) {
             prevEl: '.swiper-button-prev',
         },
         // Auto play
-        autoplay: {
-            delay: 3000,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        // },
     });
 }
 
@@ -353,3 +353,114 @@ if (document.querySelector(".photos__list")) {
         });
     }
 }
+
+if (document.querySelector(".product__list")) {
+    const loadMoreButton = document.querySelector(".product__load-more");
+    const hiddenPhotos = document.querySelectorAll(".product__item:nth-child(n+8)"); // Скрытые элементы
+
+    if (loadMoreButton && hiddenPhotos.length > 0) {
+        loadMoreButton.addEventListener("click", function () {
+            hiddenPhotos.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add("show");
+                }, index * 200);
+            });
+            loadMoreButton.style.display = "none";
+        });
+    }
+}
+
+// Translate
+const translate = {
+    armenian: {
+        Home: "Գլխավոր",
+        AboutUs: "Մեր մասին",
+        history: "Պատմություն",
+        team: "Թիմ",
+        contact: "Կապ",
+        photos: "Լուսանկարներ",
+        careers: "Կարիերա",
+        blog: "Բլոգ",
+
+        strong: "Որակը մեր խոստումն է",
+
+        searchText: "Որոնել",
+
+        contactText1: "Զանգահարեք մեզ",
+        contactText2: "Աշխատանքային ժամեր",
+        contactText3: "Հասցե"
+    },
+
+    english: {
+        Home: "ome",
+        AboutUs: "About us",
+        history: "History",
+        team: "Team",
+        contact: "Contact",
+        photos: "Photos",
+        careers: "Careers",
+        blog: "Blog",
+
+        strong: "Quality is our promise",
+
+        searchText: "Search",
+
+        contactText1: "Call us",
+        contactText2: "Working hours:",
+        contactText3: "Address"
+    },
+
+    russian: {
+        Home: "Дом",
+        AboutUs: "О нас",
+        history: "История",
+        team: "Команда",
+        contact: "Контакты",
+        photos: "Фото",
+        careers: "Карьера",
+        blog: "Блог",
+
+        strong: "Качество - это наше обещание",
+
+        searchText: "Поиск",
+
+        contactText1: "Позвони нам",
+        contactText2: "Рабочее время:",
+        contactText3: "Адрес"
+    }
+}
+
+const strong = document.querySelector(".header__strong");
+const searchInput = document.querySelector(".header__input[placeholder='Որոնել']");
+const searchBtn = document.querySelector(".header__btn");
+const contactText = document.querySelectorAll(".header__contact-text");
+
+langbtn.forEach(el => {
+    el.addEventListener("click", () => {
+        langs.querySelector(".active").classList.remove("active");
+        el.classList.add("active");
+
+        let attr = el.getAttribute("language")
+
+        links[0].textContent = translate[attr].Home
+        links[1].textContent = translate[attr].AboutUs
+        links[2].textContent = translate[attr].history
+        links[3].textContent = translate[attr].team
+        links[4].textContent = translate[attr].contact
+        links[5].textContent = translate[attr].photos
+        links[6].textContent = translate[attr].careers
+        links[7].textContent = translate[attr].blog
+
+        strong.textContent = translate[attr].strong
+
+        searchInput.placeholder = translate[attr].searchText
+        searchBtn.textContent = translate[attr].searchText
+
+        contactText[0].textContent = translate[attr].contactText1
+        contactText[1].textContent = translate[attr].contactText2
+        contactText[2].textContent = translate[attr].contactText3
+    })
+})
+
+
+// Translate
