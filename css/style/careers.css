@@ -45,6 +45,10 @@
     transform: translateY(0);
     visibility: visible;
   }
+
+  & .careers__text {
+    margin-block-end: 1rem;
+  }
 }
 
 .careers__item-title {

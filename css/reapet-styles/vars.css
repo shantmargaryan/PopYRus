@@ -5,5 +5,5 @@
     --subtitle-color: #ee0085;
     --bg-color: #F7F7F7;
     --container-grid: repeat(auto-fit, minmax(min(31.25rem, 100%), 1fr));
-    --universal-grid: repeat(auto-fit, minmax(min(20.25rem, 100%), 1fr))
+    --universal-grid: repeat(auto-fit, minmax(min(20.25rem, 100%), 1fr));
 }
