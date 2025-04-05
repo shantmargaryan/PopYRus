@@ -5,7 +5,7 @@
 
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(19.25rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(21.25rem, 100%), 1fr));
   align-items: center;
   gap: 1.875rem;
 }

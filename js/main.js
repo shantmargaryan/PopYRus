@@ -363,60 +363,90 @@ if (document.querySelector(".photos__list")) {
 // Translate
 const translate = {
     armenian: {
-        Home: "Գլխավոր",
-        AboutUs: "Մեր մասին",
-        history: "Պատմություն",
-        team: "Թիմ",
-        contact: "Կապ",
-        photos: "Լուսանկարներ",
-        careers: "Կարիերա",
-        blog: "Բլոգ",
-
+        links: [
+            "Գլխավոր",
+            "Մեր մասին",
+            "Պատմություն",
+            "Թիմ",
+            "Կապ",
+            "Լուսանկարներ",
+            "Կարիերա",
+            "Բլոգ",
+        ],
         strong: "Որակը մեր խոստումն է",
-
         searchText: "Որոնել",
-
-        contactText1: "Զանգահարեք մեզ",
-        contactText2: "Աշխատանքային ժամեր",
-        contactText3: "Հասցե"
+        contactText: [
+            "Զանգահարեք մեզ",
+            "Աշխատանքային ժամեր",
+            "Հասցե"
+        ],
+        footerLinks: [
+            "Գլխավոր",
+            "Մեր մասին",
+            "բլոգ",
+            "Կապ",
+        ],
+        footerTitle: "Մենք երազողներ ենք",
+        footerAddress: "Collins Street West 8007, San Francisco, Միացյալ Նահանգներ.",
+        footercurrentTitle: "Մենյու",
     },
 
     english: {
-        Home: "home",
-        AboutUs: "About us",
-        history: "History",
-        team: "Team",
-        contact: "Contact",
-        photos: "Photos",
-        careers: "Careers",
-        blog: "Blog",
-
+        links: [
+            "Home",
+            "About us",
+            "History",
+            "Team",
+            "Contact",
+            "Photos",
+            "Careers",
+            "Blog",
+        ],
         strong: "Quality is our promise",
-
         searchText: "Search",
-
-        contactText1: "Call us",
-        contactText2: "Working hours:",
-        contactText3: "Address"
+        contactText: [
+            "Call us",
+            "Working hours",
+            "Address"
+        ],
+        footerLinks: [
+            "Home",
+            "About us",
+            "Blog",
+            "Contact",
+        ],
+        footerTitle: "We dreamers",
+        footerAddress: "Collins Street West 8007, San Francisco, United States.",
+        footercurrentTitle: "Menu",
     },
 
     russian: {
-        Home: "Дом",
-        AboutUs: "О нас",
-        history: "История",
-        team: "Команда",
-        contact: "Контакты",
-        photos: "Фото",
-        careers: "Карьера",
-        blog: "Блог",
-
+        links: [
+            "Главная",
+            "О нас",
+            "История",
+            "Команда",
+            "Контакты",
+            "Фото",
+            "Карьера",
+            "Блог",
+        ],
         strong: "Качество - это наше обещание",
-
         searchText: "Поиск",
-
-        contactText1: "Позвони нам",
-        contactText2: "Рабочее время:",
-        contactText3: "Адрес"
+        contactText: [
+            "Позвоните нам",
+            "Часы работы",
+            "Адрес"
+        ],
+        footerLinks: [
+            "Главная",
+            "О нас",
+            "Блог",
+            "Контакты",
+        ],
+        footerTitle: "Мы мечтатели",
+        footerAddress: "Collins Street West 8007, San Francisco, Соединенные Штаты.",
+        footercurrentTitle: "Меню",
     }
 }
 
@@ -424,6 +454,10 @@ const strong = document.querySelector(".header__strong");
 const searchInput = document.querySelector(".header__input[placeholder='Որոնել']");
 const searchBtn = document.querySelector(".header__btn");
 const contactText = document.querySelectorAll(".header__contact-text");
+const footerLinks = document.querySelectorAll(".footer__link");
+const footerTitle = document.querySelector(".footer__box .footer__title");
+const footercurrentTitle = document.querySelector(".footer__content .footer__title");
+const footerAddress = document.querySelector(".footer__address");
 
 langbtn.forEach(el => {
     el.addEventListener("click", () => {
@@ -432,23 +466,28 @@ langbtn.forEach(el => {
 
         let attr = el.getAttribute("language")
 
-        links[0].textContent = translate[attr].Home
-        links[1].textContent = translate[attr].AboutUs
-        links[2].textContent = translate[attr].history
-        links[3].textContent = translate[attr].team
-        links[4].textContent = translate[attr].contact
-        links[5].textContent = translate[attr].photos
-        links[6].textContent = translate[attr].careers
-        links[7].textContent = translate[attr].blog
+        links.forEach((el, index) => {
+            el.textContent = translate[attr].links[index]
+        })
 
         strong.textContent = translate[attr].strong
 
         searchInput.placeholder = translate[attr].searchText
         searchBtn.textContent = translate[attr].searchText
 
-        contactText[0].textContent = translate[attr].contactText1
-        contactText[1].textContent = translate[attr].contactText2
-        contactText[2].textContent = translate[attr].contactText3
+        contactText.forEach((el, index) => {
+            el.textContent = translate[attr].contactText[index]
+        })
+
+        footerLinks.forEach((el, index) => {
+            el.textContent = translate[attr].footerLinks[index]
+        })
+
+        footerTitle.textContent = translate[attr].footerTitle
+
+        footerAddress.textContent = translate[attr].footerAddress
+
+        footercurrentTitle.textContent = translate[attr].footercurrentTitle
     })
 })
 
