@@ -337,36 +337,26 @@ if (document.querySelector("[data-fancybox='gallery']")) {
 }
 
 
-
 if (document.querySelector(".photos__list")) {
-    const loadMoreButton = document.querySelector(".photos__load-more");
-    const hiddenPhotos = document.querySelectorAll(".photos__item:nth-child(n+5)"); // Скрытые элементы
+    let loadMoreBtn = document.querySelector('.photos__load-more');
+    let currentItem = 4;
 
-    if (loadMoreButton && hiddenPhotos.length > 0) {
-        loadMoreButton.addEventListener("click", function () {
-            hiddenPhotos.forEach((item, index) => {
-                setTimeout(() => {
-                    item.classList.add("show");
-                }, index * 200);
-            });
-            loadMoreButton.style.display = "none";
-        });
-    }
-}
+    loadMoreBtn?.addEventListener('click', showMoreItems);
 
-if (document.querySelector(".product__list")) {
-    const loadMoreButton = document.querySelector(".product__load-more");
-    const hiddenPhotos = document.querySelectorAll(".product__item:nth-child(n+8)"); // Скрытые элементы
+    function showMoreItems() {
+        let boxes = [...document.querySelectorAll('.photos__item')];
 
-    if (loadMoreButton && hiddenPhotos.length > 0) {
-        loadMoreButton.addEventListener("click", function () {
-            hiddenPhotos.forEach((item, index) => {
-                setTimeout(() => {
-                    item.classList.add("show");
-                }, index * 200);
-            });
-            loadMoreButton.style.display = "none";
-        });
+        for (let i = currentItem; i < currentItem + 4 && i < boxes.length; i++) {
+            boxes[i].style.maxHeight = '100%',
+                boxes[i].style.opacity = '1',
+                boxes[i].style.visibility = 'visible';
+        }
+
+        currentItem += 4;
+
+        if (currentItem >= boxes.length) {
+            loadMoreBtn.style.display = "none"
+        }
     }
 }
 
